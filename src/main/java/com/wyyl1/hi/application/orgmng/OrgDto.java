@@ -1,11 +1,11 @@
-package com.wyyl1.hi.domain.orgmng;
+package com.wyyl1.hi.application.orgmng;
 
 import lombok.Data;
 
 import java.time.LocalDateTime;
 
 @Data
-public class Org {
+public class OrgDto {
 
     private Long id;
     private Long tenantId;
@@ -13,14 +13,9 @@ public class Org {
     private String orgTypeCode;
     private Long leaderId;
     private String name;
-    private OrgStatus status;
+    private String status;
     private LocalDateTime createdAt;
     private Long createdBy;
     private LocalDateTime lastUpdatedAt;
     private Long lastUpdatedBy;
-
-    public Org() {
-        // 组织的初始状态默认为有效
-        status = OrgStatus.EFFECTIVE;
-    }
 }
