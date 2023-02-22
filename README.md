@@ -4,16 +4,16 @@
 
 ### UML 入门
 
-- [DDD 之 UML 入门 1](https://www.wyyl1.com/01) [课程原文链接](http://gk.link/a/11UPs)
-- [DDD 之 UML 入门 2](https://www.wyyl1.com/02) [课程原文链接](http://gk.link/a/11UTm)
+- [DDD 之 UML 入门 1](https://www.wyyl1.com/post/23/01) [课程原文链接](http://gk.link/a/11UPs)
+- [DDD 之 UML 入门 2](https://www.wyyl1.com/post/23/02) [课程原文链接](http://gk.link/a/11UTm)
 
 ### 数据库设计
 
-- [DDD-数据库设计](https://www.wyyl1.com/03) [课程原文链接](http://gk.link/a/11W17)
+- [DDD-数据库设计](https://www.wyyl1.com/post/23/03) [课程原文链接](http://gk.link/a/11W17)
 
 ### 架构
 
-- [DDD-分层架构](https://www.wyyl1.com/04) [课程原文链接](http://gk.link/a/11WlS)
+- [DDD-分层架构](https://www.wyyl1.com/post/23/04) [课程原文链接](http://gk.link/a/11WlS)
 
 ## 项目说明
 

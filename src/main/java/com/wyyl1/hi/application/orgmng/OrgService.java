@@ -1,7 +1,5 @@
 package com.wyyl1.hi.application.orgmng;
 
-import com.wyyl1.hi.adapter.driving.persistence.orgmng.EmpRepository;
-import com.wyyl1.hi.adapter.driving.persistence.tenantmng.TenantRepository;
 import com.wyyl1.hi.domain.orgmng.Org;
 import com.wyyl1.hi.domain.orgmng.OrgRepository;
 import lombok.AllArgsConstructor;
@@ -12,9 +10,7 @@ import org.springframework.stereotype.Service;
 @AllArgsConstructor
 public class OrgService {
 
-    private final TenantRepository tenantRepository;
     private final OrgRepository orgRepository;
-    private final EmpRepository empRepository;
 
     public OrgDto addOrg(OrgDto request, Long userId) {
         validate(request);

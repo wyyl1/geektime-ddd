@@ -15,7 +15,6 @@ public class OrgController {
 
     @PostMapping("/api/organizations")
     public OrgDto addOrg(@RequestBody OrgDto request) {
-        // 从请求里解析出 userId ...
-        return orgService.addOrg(request, userId);
+        return orgService.addOrg(request, request.getLeaderId());
     }
 }
