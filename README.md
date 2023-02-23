@@ -20,3 +20,9 @@
 - JDK 17
 - Gradle
 - [练习代码分支说明](https://www.wyyl1.com/post/23/dir/#%E7%BB%83%E4%B9%A0%E4%BB%A3%E7%A0%81)
+
+## 输出代码目录结构
+
+```cmd
+tree -I "Application.java|effortmng|projectmng|tenantmng"
+```

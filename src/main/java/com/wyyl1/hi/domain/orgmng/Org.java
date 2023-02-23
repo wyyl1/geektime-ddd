@@ -7,17 +7,17 @@ import java.time.LocalDateTime;
 @Data
 public class Org {
 
-    private Long id;
-    private Long tenantId;
-    private Long superiorId;
+    private Integer id;
+    private Integer tenantId;
+    private Integer superiorId;
     private String orgTypeCode;
-    private Long leaderId;
+    private Integer leaderId;
     private String name;
     private OrgStatus status;
     private LocalDateTime createdAt;
-    private Long createdBy;
+    private Integer createdBy;
     private LocalDateTime lastUpdatedAt;
-    private Long lastUpdatedBy;
+    private Integer lastUpdatedBy;
 
     public Org() {
         // 组织的初始状态默认为有效

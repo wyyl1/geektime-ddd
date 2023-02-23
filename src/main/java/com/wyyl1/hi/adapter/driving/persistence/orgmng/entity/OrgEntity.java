@@ -35,10 +35,7 @@ import lombok.experimental.Accessors;
 public class OrgEntity extends RichEntity {
   private static final long serialVersionUID = 1L;
 
-  @TableId(
-      value = "id",
-      auto = false
-  )
+  @TableId("id")
   private Integer id;
 
   @TableField("tenant_id")
