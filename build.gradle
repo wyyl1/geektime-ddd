@@ -24,9 +24,10 @@ dependencies {
 
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     implementation 'mysql:mysql-connector-java:8.0.31'
-    implementation 'com.github.atool:fluent-mybatis:1.9.4.1'
-    testImplementation 'com.github.atool:fluent-mybatis-processor:1.9.4.1'
-    annotationProcessor("com.github.atool:fluent-mybatis-processor:1.9.4.1")
+    implementation 'com.github.atool:fluent-mybatis:1.9.8'
+    testImplementation 'com.github.atool:fluent-mybatis-processor:1.9.8'
+    annotationProcessor("com.github.atool:fluent-mybatis-processor:1.9.8")
+    testImplementation('org.apache.commons:commons-dbcp2:2.8.0')
 
     implementation 'org.springframework:spring-tx:5.3.14'
     compileOnly 'org.springframework.boot:spring-boot-dependencies:2.6.2'

@@ -2,6 +2,7 @@ package com.wyyl1.hi.adapter.driving.persistence.orgmng;
 
 import com.wyyl1.hi.adapter.driving.persistence.orgmng.entity.OrgEntity;
 import com.wyyl1.hi.adapter.driving.persistence.orgmng.mapper.OrgMapper;
+import com.wyyl1.hi.common.util.DateUtils;
 import com.wyyl1.hi.domain.orgmng.Org;
 import com.wyyl1.hi.domain.orgmng.OrgRepository;
 import com.wyyl1.hi.domain.orgmng.OrgStatus;
@@ -36,6 +37,8 @@ public class OrgRepositoryImpl implements OrgRepository {
     public Org save(Org org) {
         OrgEntity entity = new OrgEntity();
         BeanUtils.copyProperties(org, entity);
+        entity.setCreateAt(DateUtils.dateOf(org.getCreatedAt()));
+        entity.setCreateBy(org.getCreatedBy());
 
         int insert = mapper.insert(entity);
         if (insert != 1) {

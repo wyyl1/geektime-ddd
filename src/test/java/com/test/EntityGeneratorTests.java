@@ -1,3 +1,5 @@
+package com.test;
+
 import cn.org.atool.generator.FileGenerator;
 import cn.org.atool.generator.annotation.Column;
 import cn.org.atool.generator.annotation.Table;

@@ -12,7 +12,7 @@ public class OrgService {
 
     private final OrgRepository orgRepository;
 
-    public OrgDto addOrg(OrgDto request, Long userId) {
+    public OrgDto addOrg(OrgDto request, Integer userId) {
         validate(request);
         Org org = buildOrg(request, userId);
         org = orgRepository.save(org);
@@ -27,7 +27,7 @@ public class OrgService {
         return result;
     }
 
-    private Org buildOrg(OrgDto request, Long useId) {
+    private Org buildOrg(OrgDto request, Integer useId) {
         // 将DTO的值赋给领域对象...
         Org result = new Org();
         BeanUtils.copyProperties(request, result);
