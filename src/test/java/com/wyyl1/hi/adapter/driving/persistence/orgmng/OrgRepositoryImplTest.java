@@ -7,17 +7,17 @@ import com.wyyl1.hi.domain.orgmng.Org;
 import com.wyyl1.hi.domain.orgmng.OrgRepository;
 import com.wyyl1.hi.domain.orgmng.OrgStatus;
 import org.junit.jupiter.api.Test;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.time.LocalDateTime;
 
 class OrgRepositoryImplTest extends BaseTest {
 
-//    private OrgRepository repository = new OrgRepositoryImpl(MapperFactoryImpl.of().mapper(OrgMapper.class));
-
     @Resource
     private OrgRepository repository;
     @Test
+    @Transactional
     void save_success() {
         Org org = new Org();
         org.setTenantId(1);

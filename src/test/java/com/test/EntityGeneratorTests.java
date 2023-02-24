@@ -38,7 +38,8 @@ public class EntityGeneratorTests {
                     value = {
                             "org:Org"
                     },
-                    columns = @Column(value = "gender_man", javaType = Boolean.class)
+                    columns = @Column(value = "gender_man", javaType = Boolean.class),
+                    useDao = false
             ),
             // Entity 字段顺序按数据库定义顺序选项
             alphabetOrder = false

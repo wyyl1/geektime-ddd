@@ -35,16 +35,19 @@ public class OrgRepositoryImpl implements OrgRepository {
 
     @Override
     public Org save(Org org) {
-        OrgEntity entity = new OrgEntity();
-        BeanUtils.copyProperties(org, entity);
-        entity.setCreateAt(DateUtils.dateOf(org.getCreatedAt()));
-        entity.setCreateBy(org.getCreatedBy());
-
-        int insert = mapper.insert(entity);
+        int insert = mapper.insert(createEntity(org));
         if (insert != 1) {
             throw new RuntimeException("插入组织失败");
         }
 
         return org;
+    }
+
+    private static OrgEntity createEntity(Org org) {
+        OrgEntity entity = new OrgEntity();
+        BeanUtils.copyProperties(org, entity);
+        entity.setCreateAt(DateUtils.dateOf(org.getCreatedAt()));
+        entity.setCreateBy(org.getCreatedBy());
+        return entity;
     }
 }
